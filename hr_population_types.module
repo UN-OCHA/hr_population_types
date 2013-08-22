@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Code for the humanitarianresponse population types feature.
+ */
+
+include_once('hr_population_types.features.inc');
+
+/**
+ * Implements hook_cron()
+ */
+function hr_population_types_cron() {
+  humanitarianresponse_core_feeds_check('csv_population_types', 'http://terms.humanitarianresponse.info/population-types.csv');
+}
