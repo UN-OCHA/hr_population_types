@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_default_field_bases().
  */
-function humanitarianresponse_assessments_field_default_field_bases() {
+function hr_population_types_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_population_type'
